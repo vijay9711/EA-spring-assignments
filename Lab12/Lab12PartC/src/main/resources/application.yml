@@ -1,0 +1,18 @@
+application:
+  name: Lab12PartC
+  version: 1.0.0
+
+server:
+  url: http://localhost:8080
+  name: MyServer
+
+user:
+  firstname: Rick
+  lastname: Rim
+  username: universal
+  password: universal123
+
+countries:
+  - USA
+  - Canada
+  - India
