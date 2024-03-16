@@ -1,19 +1,24 @@
 spring:
+  application:
+    name: lab4
   datasource:
-    url: jdbc:hsqldb:hsql://localhost:9003/trainingdb
-    username: SA
-    password: ''
-    driver-class-name: org.hsqldb.jdbcDriver
+    password: 1
+    url: jdbc:postgresql://localhost:5050/lab4
+    username: postgres
   jpa:
     hibernate:
-      ddl-auto: create
-    show-sql: true
+      ddl-auto: create-drop
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.HSQLDialect
-
-logging:
-  level:
-    root: ERROR
-    org:
-      springframework: ERROR
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: false
+    show-sql: true
+    defer-datasource-initialization: true
+    generate-ddl: true
+  sql:
+    init:
+      mode: always
+  main:
+    allow-circular-references: true
+server:
+  port: 8080
