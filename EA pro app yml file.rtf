@@ -1,0 +1,55 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2758
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fmodern\fcharset0 Courier-Oblique;}
+{\colortbl;\red255\green255\blue255;\red195\green123\blue90;\red23\green23\blue26;\red174\green176\blue183;
+\red38\green157\blue169;\red72\green151\blue245;\red78\green112\blue88;}
+{\*\expandedcolortbl;;\csgenericrgb\c76471\c48235\c35294;\csgenericrgb\c9020\c9020\c10196;\csgenericrgb\c68235\c69020\c71765;
+\csgenericrgb\c14902\c61569\c66275;\csgenericrgb\c28235\c59216\c96078;\csgenericrgb\c30588\c43922\c34510;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 common\cf4 :\
+  \cf2 security\cf4 :\
+    \cf2 enabled\cf4 : \cf2 false\
+  feign-oauth\cf4 :\
+    \cf2 enabled\cf4 : \cf2 false\
+  mvc\cf4 :\
+    \cf2 enabled\cf4 : \cf2 false\
+server\cf4 :\
+  \cf2 ssl\cf4 :\
+    \cf2 enabled\cf4 : \cf2 false\
+  servlet\cf4 :\
+    \cf2 context-path\cf4 : /badge-system\
+\cf2 spring\cf4 :\
+  \cf2 security\cf4 :\
+    \cf2 user\cf4 :\
+      \cf2 name\cf4 : admin\
+      \cf2 password\cf4 : admin\
+  \cf2 application\cf4 :\
+    \cf2 name\cf4 : cs544-202403-project\
+  \cf2 datasource\cf4 :\
+    \cf2 url\cf4 : jdbc:mysql://localhost:3306/attendance_system_db\
+    \cf2 username\cf4 : root\
+    \cf2 password\cf4 : 12345678\
+    \cf2 driver-class-name\cf4 : com.mysql.cj.jdbc.Driver\
+    \cf2 hikari\cf4 :\
+      \cf2 maximumPoolSize\cf4 : \cf5 10\
+  \cf2 jpa\cf4 :\
+    \cf2 show-sql\cf4 : \cf2 true\
+    hibernate\cf4 :\
+      \cf2 ddl-auto\cf4 : \cf6 update\
+
+\f1\i \cf7 #      naming:\
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl\
+#        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl\
+    
+\f0\i0 \cf2 properties\cf4 :\
+      \cf2 hibernate\cf4 :\
+        \cf2 dialect\cf4 : org.hibernate.dialect.MySQLDialect\
+        \
+\cf2 logging\cf4 :\
+  \cf2 level\cf4 :\
+    \cf2 root\cf4 : \cf6 INFO\
+  \cf2 file\cf4 :\
+    \cf2 name\cf4 : /CS544/Logging/$\{\cf2 spring.application.name\cf4 \}/logs\
+\
+}
